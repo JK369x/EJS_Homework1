@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            min-height: 100vh;
+            background: #fafafa;
+        }
+
+        .container{
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            width: 500px;
+        }
+        .form{
+            padding: 10px 40px;
+        }
+        h2{
+            text-align: center;
+            margin: 0 0 0 20px;
+        }
+        .form-control{
+            position: relative;
+            margin-bottom: 2px;
+            padding-bottom: 5px;
+        }
+        .form-control label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-control input{
+            display: block;
+            border: 2px solid #f0f0f0;
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .form-control input:focus{
+            outline: none;
+        }
+        
+        
+        textarea{
+            display: block;
+            border: 2px solid #f0f0f0;
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+        } 
+
+        .form button{
+            background: #3498db;
+            cursor: pointer;
+            color: #fff;
+            width: 100%;
+            margin-top: 20px;
+            border: 2px solid #3498db;
+            display: block;
+            padding: 10px;
+            font-size: 
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <form class="form">
+                <h2>ฟอร์มการลงทะเบียนเรียน</h2>
+                <div class="form-control">
+                    <label>ชื่อ</label>
+                    <input type="text">
+                </div>
+                <div class="form-control">
+                    <label>นามสกุล</label>
+                    <input type="text">
+                </div>
+                <div class="form-control">
+                    <label>เบอร์โทร</label>
+                    <input type="text">
+                </div>
+                <div class="form-sex">
+                    <label>เพศ</label>
+                    <input type="radio">
+                    <label>ชาย</label>
+                    <input type="radio">
+                    <label>หญิง</label>
+                </div>
+                <label>ที่อยู่</label>
+                <div class="form-control">
+                    <textarea rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-control">
+                    <label>สาขาที่ลงทะเบียนเรียน</label>
+                    <select class="form-select">
+                        <option selected>เลือกสาขา</option>
+                        <option value="1">คณะศิลปศาสตร์</option>
+                        <option value="2">คณะครุศาสตร์อุตสาหกรรม</option>
+                        <option value="3">คณะวิศวกรรมศาสตร์</option>
+                    </select>
+                </div>
+                <label id='form1' for="">วิชาที่ลงทะเบียน</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">หมวดวิชาศึกษาทั่วไป</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">สังคมกับสิ่งแวดล้อม</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">การพัฒนาคุณภาพชีวิตและสังคม</label>
+                </div>
+                <div class="form-control ">
+                    <label>วันที่ลงทะเบียน</label>
+                    <input class="form-control" type="date" />
+                </div>
+                <div class="form-control">
+                    <label>อัพโหลดรูปภาพ</label>
+                    <input class="form-control" type="file" />
+                </div>
+                <button>ยืนยัน</button>
+            </form>
+        </div>
+    </body>
+</html>
